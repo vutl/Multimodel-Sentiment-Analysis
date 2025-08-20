@@ -1,0 +1,12 @@
+torch
+torchaudio
+torchvision
+transformers
+pandas
+tqdm
+boto3
+opencv-python
+sagemaker
+soundfile
+tensorboard
+scikit-metrics
