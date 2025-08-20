@@ -213,8 +213,6 @@ Below are key diagrams and screenshots to help you understand the architecture, 
 ![SaaS UI](./docs/Project_Example.png)
 *Screenshot of the SaaS dashboard: video upload, real-time analysis, API key management, quota tracking, and API usage examples.*
 
-> **Tip:** Place these images in a `docs/` folder at the project root. If you use different paths, update the links above accordingly.
-
 ---
 
 ## Notes
