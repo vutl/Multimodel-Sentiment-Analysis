@@ -194,23 +194,23 @@ cd "Emotion Recognition CV"
 Below are key diagrams and screenshots to help you understand the architecture, data flow, and user experience of this project:
 
 ### 1. AWS Architecture Overview
-![AWS Architecture](./docs/arch-aws.png)
+![AWS Architecture](./docs/AWS_Pipeline.png)
 *Shows how EC2, S3, SageMaker, and IAM interact for dataset upload, model training, deployment, and endpoint invocation.*
 
 ### 2. Dataset Class & Preprocessing
-![Dataset Class](./docs/arch-dataset-class.png)
+![Dataset Class](./docs/Dataset_Class.png)
 *Illustrates how the dataset class loads CSV and video files, extracts features (text, video, audio), and prepares samples for training.*
 
 ### 3. Model Architecture
-![Model Architecture](./docs/arch-model.png)
+![Model Architecture](./docs/Baseline_Model.png)
 *Describes the multimodal model: encoders for video (ResNet3D), text (BERT), and audio (spectrogram), fusion layer, and separate heads for emotion and sentiment classification.*
 
 ### 4. Training & TensorBoard Logging Flow
-![Training Flow](./docs/arch-train-tensorboard.png)
+![Training Flow](./docs/Training_Pipeline.png)
 *Explains the process from dataset download, S3 upload, SageMaker training job, to viewing logs with TensorBoard.*
 
 ### 5. SaaS UI Example
-![SaaS UI](./docs/arch-ui.png)
+![SaaS UI](./docs/Project_Example.png)
 *Screenshot of the SaaS dashboard: video upload, real-time analysis, API key management, quota tracking, and API usage examples.*
 
 > **Tip:** Place these images in a `docs/` folder at the project root. If you use different paths, update the links above accordingly.
