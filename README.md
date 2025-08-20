@@ -189,6 +189,34 @@ cd "Emotion Recognition CV"
 
 ---
 
+## System Architecture & Visuals
+
+Below are key diagrams and screenshots to help you understand the architecture, data flow, and user experience of this project:
+
+### 1. AWS Architecture Overview
+![AWS Architecture](./docs/arch-aws.png)
+*Shows how EC2, S3, SageMaker, and IAM interact for dataset upload, model training, deployment, and endpoint invocation.*
+
+### 2. Dataset Class & Preprocessing
+![Dataset Class](./docs/arch-dataset-class.png)
+*Illustrates how the dataset class loads CSV and video files, extracts features (text, video, audio), and prepares samples for training.*
+
+### 3. Model Architecture
+![Model Architecture](./docs/arch-model.png)
+*Describes the multimodal model: encoders for video (ResNet3D), text (BERT), and audio (spectrogram), fusion layer, and separate heads for emotion and sentiment classification.*
+
+### 4. Training & TensorBoard Logging Flow
+![Training Flow](./docs/arch-train-tensorboard.png)
+*Explains the process from dataset download, S3 upload, SageMaker training job, to viewing logs with TensorBoard.*
+
+### 5. SaaS UI Example
+![SaaS UI](./docs/arch-ui.png)
+*Screenshot of the SaaS dashboard: video upload, real-time analysis, API key management, quota tracking, and API usage examples.*
+
+> **Tip:** Place these images in a `docs/` folder at the project root. If you use different paths, update the links above accordingly.
+
+---
+
 ## Notes
 - The MELD dataset is not included in this repo. Download it manually and place in `AI_Model/dataset/`.
 - The `AI_Model/dataset/` folder is git-ignored for privacy and size.
